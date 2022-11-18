@@ -1,4 +1,4 @@
-pymongo==4.2.0
-pandas
-sklearn
--e .
+pymongo[srv]==4.2.0
+
+certifi
+# -e .
