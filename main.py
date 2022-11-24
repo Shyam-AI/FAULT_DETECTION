@@ -1,6 +1,18 @@
-from topics.configuration.mongo_db_connection import MongoDBClient
+from topics.exception import TopicsException
+import sys
+from topics.logger import logging
 
 
-if __name__ == "__main__":
-    mongo_db_client = MongoDBClient()
-    print(mongo_db_client.database.list_collection_names())
+def exception_test():
+    try:
+        logging.error("We are dividing by zero")
+        x = 1/0
+    except Exception as e:
+        raise TopicsException(e, sys)
+
+
+if __name__=="__main__":
+    try:
+        exception_test()
+    except Exception as e:
+        print(e)
