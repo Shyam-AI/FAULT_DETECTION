@@ -1,1 +1,2 @@
 DATABASE_NAME = "topic"
+COLLECTION_NAME = "sensor"
