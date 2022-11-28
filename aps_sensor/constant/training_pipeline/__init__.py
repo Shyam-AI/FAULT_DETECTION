@@ -1,5 +1,5 @@
 import os
-from topics.constant.s3_bucket import TRAINING_BUCKET_NAME
+from aps_sensor.constant.s3_bucket import TRAINING_BUCKET_NAME
 
 
 SAVED_MODEL_DIR =os.path.join("saved_models")

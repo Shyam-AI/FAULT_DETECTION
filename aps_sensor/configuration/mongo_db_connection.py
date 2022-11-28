@@ -1,5 +1,5 @@
 import pymongo
-from topics.constant.database import DATABASE_NAME
+from aps_sensor.constant.database import DATABASE_NAME
 import certifi
 import os
 ca = certifi.where()

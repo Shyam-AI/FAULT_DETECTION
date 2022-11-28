@@ -1,6 +1,6 @@
 from datetime import datetime
 import os
-from topics.constant import training_pipeline
+from aps_sensor.constant import training_pipeline
 
 class TrainingPipelineConfig:
 

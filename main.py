@@ -1,6 +1,6 @@
-from topics.exception import TopicsException
+from aps_sensor.exception import TopicsException
 import sys
-from topics.logger import logging
+from aps_sensor.logger import logging
 
 
 def exception_test():
