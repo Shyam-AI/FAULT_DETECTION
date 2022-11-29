@@ -37,7 +37,7 @@ def get_requirements()->List:
 
 
 setup (
-    name="topics",
+    name="aps_sensor",
     version="0.0.1",
     author = "Shyam",
     author_email="shyamdl2803@gmail.com",
