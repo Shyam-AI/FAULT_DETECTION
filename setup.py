@@ -24,6 +24,7 @@
 from setuptools import find_packages, setup
 from typing import List
 # list_of_requirements = [pymongo[srv]==4.2.0,certifi,-e .]
+HYPHEN_E_DOT = "-e ."
 
 def get_requirements()->List:
     requirement_list:List = []
@@ -31,6 +32,8 @@ def get_requirements()->List:
         req_file = open("requirements.txt")
         file_contents= req_file.read()
         requirement_list= file_contents.splitlines()
+        if HYPHEN_E_DOT in requirement_list:
+            requirement_list.remove(HYPHEN_E_DOT)
     except FileNotFoundError:
         return "Kindly check the file is missing"
     return requirement_list
